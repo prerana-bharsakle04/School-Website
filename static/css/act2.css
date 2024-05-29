@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/activity2.img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.upperBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+.box1{
+    height: 16rem;
+    width: 16rem;
+    background-color: white;
+    border-radius: 5rem;
+    /* text-align: center; */
+    padding-top: 0.5rem;
+    box-shadow: 0rem 0rem 3rem 1rem grey;
+    background-color: rgb(242, 207, 143);
+   
+}
+.box1 h2, .box2 h2, .box3 h2{
+    text-align: center;
+    padding-top: 1rem;
+    color:brown;
+}
+.box1 ul, .box2 ul{
+    /* text-align: center; */
+    padding-top: 1rem;
+    padding-left: 3rem;
+    font-size: 1.1rem;
+    text-align: left;
+    /* color: white; */
+}
+
+
+.box2{
+    height: 16rem;
+    width: 16rem;
+    background-color: white;
+    border-radius: 5rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    background-color: rgb(242, 207, 143);
+    
+    box-shadow: 0rem 0rem 3rem 1rem grey;
+}
+
+.lowerBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.box3{
+    height: 25rem;
+    width: 35rem;
+    background-color: white;
+    border-radius: 5rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    background-color: rgb(252, 241, 219);
+    box-shadow: 0rem 0rem 3rem 1rem grey;
+}
+.box3 p{
+    padding-top: 2rem;
+    /* padding-left: 3rem; */
+    font-size: 1.1rem;
+    padding: 2rem;
+}

@@ -1,0 +1,339 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vande Mataram Education Campus</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'img/logo.jpg' %}">
+
+
+
+    <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "9TkrzamtMHnsUT08bOFjO",
+        domain: "www.chatbase.co"
+        }
+        </script>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="9TkrzamtMHnsUT08bOFjO"
+        domain="www.chatbase.co"
+        defer>
+        </script>
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="left">Vande Mataram
+                {% comment %} <img src="{% static 'img/logo.jpg' %}" alt=""> {% endcomment %}
+            </div>
+            <div class="middle">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#abt">About</a></li>
+                    <li><a href="#Sclass">Class</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="{% url 'contact' %}" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <a href="{% url 'login' %}" target="_blank"><button>Login</button></a>
+            </div>
+        </div>
+
+        <div class="main" id="home">
+            <h1><b>I</b>nspire</h1>
+            <p>A Love of Learning!</p>
+            <button>Explore Now!</button>
+        </div>
+
+        <div class="section-1">
+            <h2>Welcome to Our School!</h2>
+            <p>"The most important day of Person's Education is first day of school, not Graduation Day!"</p>
+            <p>We firmly believe that education is a fundamental right, not a privilege reserved for those who can afford it. That's why we are committed to providing free education to all students at our school. By removing financial barriers, we ensure that every child has the opportunity to access high-quality education, regardless of their background or economic status. Our belief in the transformative power of education drives us to prioritize accessibility and equity in everything we do.</p>
+        </div>
+
+        
+        <div class="about" id="abt">
+            <h1><b>A</b>bout Us !</h1>
+            <div class="aboutContent">
+                <div class="content-1">
+                    <p>
+                        We are proud to offer tuition-free education at our school, ensuring that every student has the opportunity to pursue their academic goals regardless of their financial situation. By removing the barrier of tuition fees, we believe in making education accessible to all, fostering a diverse and inclusive learning environment where every individual can thrive. Our commitment to free education extends beyond traditional academic subjects to include extracurricular activities, vocational training, and enrichment programs. Through partnerships with government agencies, philanthropic organizations, and community stakeholders, we are able to sustainably fund our tuition-free model, ensuring that every student has the resources they need to succeed. At our school, we believe that education is a fundamental right, not a privilege, and we are dedicated to empowering every student to reach their full potential without the burden of financial constraints.
+                    </p>
+                    <br>
+                    <p>
+                        In addition to academic excellence, we prioritize the well-being and holistic development of our students. Through counseling services, mentorship programs, and community partnerships, we provide comprehensive support to address the social, emotional, and physical needs of our diverse student body. We believe that by nurturing the whole child, we empower them to thrive not only in the classroom but also in life beyond our school walls.
+                    </p>
+                    <br>
+                    <p>U-Dise No. - 27010116202
+                    </p>
+                    <br>
+                    <p>Index No. - S-19.03.107</p>
+
+                </div>
+                <div class="content-img">
+                    <img src="{% static 'img/about1.jpg' %}" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section-2">
+            <h2>"Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime" </h2>
+            <p>Providing free education for students is not only a fundamental right but also a cornerstone of a just and equitable society. By eliminating financial barriers to education, we ensure that all individuals, regardless of their socio-economic background, have access to the knowledge and skills needed to thrive in today's world. Free education opens doors of opportunity, empowering students to pursue their passions, fulfill their potential, and contribute meaningfully to their communities.
+
+            At our institution, we are committed to making quality education accessible to all. Through strategic partnerships, government funding, and philanthropic support, we are able to offer tuition-free programs to our students. This includes not only traditional academic subjects but also vocational training, technical skills development, and lifelong learning opportunities.</p>
+        </div>
+
+        <div class="headmistress">
+            <div class="content2-img">
+                <img src="{% static 'img/headmistress.jpg' %}" alt="" srcset="">
+            </div>
+            <div class="content-2">
+                <h1>Welcome from Headmistress...!</h1>
+                <p>"We believe in the power of education to transform lives and shape the future. Our commitment to providing a supportive and enriching environment where every student can thrive is unwavering. Whether you are a new student embarking on your educational journey with us or a returning member of our school family, I want you to know that you are valued and supported every step of the way.
+                <br><br>
+                As we embark on a new academic year, I am filled with optimism and excitement for the opportunities that lie ahead. Together, we will explore, discover, and grow, both academically and personally. Our dedicated team of educators is committed to providing engaging and rigorous instruction that challenges and inspires students to reach their full potential."</p>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="school" id="Sclass">
+            <h1><b>O</b>ur School !</h1>
+            <div class="schoolTypes">
+
+                <div class="primary">
+                    <div class="primary-img">
+                        <img src="{% static 'img/primary-school.jpg' %}" alt="">
+                    </div>
+                    <div class="primary-details">
+                        Primary School
+                    </div>
+                    <div class="detail-arrow">
+                        <button>Our Primary School   <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="higher">
+                    <div class="higher-img">
+                        <img src="{% static 'img/higher-school.jpg' %}" alt="">
+                    </div>
+                    <div class="higer-details">
+                        Higher School
+                    </div>
+                    <div class="detail-arrow">
+                        <button>Our Higher School  <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="SVideo">
+            <video src="{% static 'img/school-video.mp4' %}" autoplay loop muted></video>
+        </div>
+
+        <div class="activites" id="events">
+            <h1><b>O</b>ppourtinites and Activites Beyond the Classroom!</h1>
+            <div class="act-sections">
+
+                <div class="act-1">
+                    <img src="{% static 'img/act1.jpg' %}" alt="">
+                    <h2>GANESH CHATURTI</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quidem tempora temporibus consequatur cumque, iusto distinctio nobis incidunt. Amet, exercitationem provident. Facilis, sed voluptas ratione voluptate eos nostrum hic? Maiores?</p>
+                    <a href="{% url 'act1' %}" target="_blank"><button>Know More   <i class="fa-solid fa-arrow-right"></i></button></a>
+                </div>
+
+                <div class="act-1">
+                    <img src="{% static 'img/act2.jpg' %}" alt="">
+                    <h2>EXHIBITION</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, natus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati temporibus maiores fugiat cumque quaerat iste quam sunt fugit quisquam illo aspernatur, tenetur itaque dolor exercitationem doloremque harum, pariatur reprehenderit est!</p>
+                    <a href="{% url 'act2' %}" target="_blank"><button>Know More   <i class="fa-solid fa-arrow-right"></i></button></a>
+                </div>
+
+                <div class="act-1">
+                    <img src="{% static 'img/act3.jpg' %}" alt="">
+                    <h2>JANMASHTAMI</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, natus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum soluta ut optio architecto delectus omnis exercitationem id necessitatibus, facere, nam accusantium commodi minima. Modi beatae molestiae reprehenderit quod ut ex?</p>
+                    <a href="{% url 'act3' %}" target="_blank"><button>Know More   <i class="fa-solid fa-arrow-right"></i></button></a>
+                </div>
+
+                <div class="act-1">
+                    <img src="{% static 'img/act4.jpg' %}" alt="">
+                    <h2>FUN ACTIVITIES - GAMES</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, natus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis fugit dolore fugiat nisi quia ratione praesentium ipsam nulla at dignissimos distinctio officia facilis, autem illum mollitia veniam? Eveniet, nisi optio.</p>
+                    <a href="{% url 'act4' %}" target="_blank"><button>Know More   <i class="fa-solid fa-arrow-right"></i></button></a>
+                </div>
+
+                <div class="act-1">
+                    <img src="{% static 'img/act5.jpg' %}" alt="">
+                    <h2>REPUBLIC DAY</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quia totam ut impedit voluptatem! Enim quia dolor minima fugit nobis laborum animi, iure qui quis! Accusamus ex aperiam reprehenderit. Incidunt?</p>
+                    <a href="{% url 'act5' %}" target="_blank"><button>Know More   <i class="fa-solid fa-arrow-right"></i></button></a>
+                </div>
+
+                <div class="act-1">
+                    <img src="{% static 'img/act6.jpg' %}" alt="">
+                    <h2>Mid-Day-Meal</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima similique quos perferendis omnis atque ipsa qui sunt? Autem unde soluta, earum suscipit itaque repudiandae, quasi labore aspernatur officia, vero iure?</p>
+                    <a href="{% url 'act6' %}" target="_blank"><button>Know More   <i class="fa-solid fa-arrow-right"></i></button></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="contact" id="cont">
+
+            <div class="section-title">
+                <h1>Contact Us</h1>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232.3480223125893!2d74.13700674731083!3d21.393123229016158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdfa1d13b9e307d%3A0x19a763af48ec684e!2sMadhyamik%20Vidyalaya%2C%20Umarde%20Bk.!5e0!3m2!1sen!2sin!4v1709635346943!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="contact-info">
+
+                <div class="contact-1">
+                    <div class="info">
+                        <div class="location">
+                            
+                            <h4><i class="fa-solid fa-location-dot"></i>   Location</h4>
+                            <p>At Umarde Bk. Post-Sundarde, Taluka-Nandurbar, District-Nandurbar</p>
+                        </div>
+                        
+                        <div class="email">
+                            <h4><i class="fa-solid fa-paper-plane"></i> Email</h4>
+                            <p>vandemataram@gmail.com</p>
+                        </div>
+
+                        <div class="call">
+                            <h4> <i class="fa-solid fa-phone-volume"></i> Call</h4>
+                            <p>+91 9423083383</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-2">
+                    <form action="">
+                        <div class="row1">
+                            <div class="name">
+                                <input type="text" placeholder="Your Name">
+                            </div>
+                            <div class="email-1">
+                                <input type="text" placeholder="Your Email">
+                            </div>
+                        </div>
+
+                        <div class="subject">
+                            <input type="text" placeholder="Subject">
+                        </div>
+
+                        <div class="msg">
+                            <textarea name="text" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+
+                        <div class="submit">
+                            <button>Send Message    <i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <footer>
+        <div class="footer">
+            <div class="f-1">
+                <p>Vande Mataram Education Campus - Madhyamik Vidhyalaya Umarde BK.</p>
+            </div>
+            
+
+            <div class="f-2">
+                <p>At Umarde Bk Post - Sundarde, Tal,Dist. Nandurbar - 425412</p>
+            </div>
+
+            <div class="udise">
+                <p>U-Dise No. - 27010116202
+                </p>
+                <!-- <br> -->
+                <p>Index No. - S-19.03.107</p>
+            </div>
+            <br>
+
+            <div class="f-3">
+                <div class="office">
+                    <i class="fa-solid fa-envelopes-bulk"> </i>  MAIN OFFICE: +91 9423083383
+                </div>
+
+                <div class="pipe">
+                    <i class="fa-solid fa-grip-lines-vertical"></i>
+                </div>
+
+                <div class="fax">
+                    <i class="fa-solid fa-fax"> </i> FAX: 123-456-7890
+                </div>
+
+                <div class="pipe">
+                    <i class="fa-solid fa-grip-lines-vertical"></i>
+                </div>
+
+                <div class="emailUs">
+                    <i class="fa-solid fa-envelope">  </i>  Email Us
+                </div>
+            </div>
+            <div class="f-4">
+                <div class="student">
+                    <i class="fa-solid fa-clock"> </i> STUDENT HOURS: 10:00 a.m. to 4:00 p.m
+                </div>
+
+                <div class="pipe">
+                    <i class="fa-solid fa-grip-lines-vertical"></i>
+                </div>
+
+                <div class="office">
+                    <i class="fa-solid fa-hourglass-half"> </i> OFFICE HOURS: 9:00 a.m. to 5:00 p.m.
+                </div>
+            </div>
+            <div class="f-5">
+                <div class="logo">
+
+                </div>
+                <div class="logo">
+
+                </div>
+                <div class="logo">
+
+                </div>
+                <div class="logo">
+
+                </div>
+            </div>
+            <div class="f-6">
+                <div class="footer-btns">
+                    <button>See Something, Say Something</button>
+                </div>
+                <div class="footer-btns">
+                    <button>Career</button>
+                </div>
+                <div class="footer-btns">
+                    <button>Our Staff</button>
+                </div>
+                <div class="footer-btns">
+                    <button>Contact</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="end">
+                <p>&copy Copyright! Designed and Developed By TORNADO_X</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a537241c77.js" crossorigin="anonymous"></script>
+</body>
+</html>

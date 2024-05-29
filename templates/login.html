@@ -1,0 +1,59 @@
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+    <!-- <div class="video" >
+        <video src="images/video-1.mp4" height="100vh" width="200%" autoplay loop muted></video>
+    </div> -->
+    
+  <div class="container">
+
+    {% if messages %}
+      {% for x in messages%}
+        <b style="color:red;">{{ x }}</b>
+      {% endfor %}
+    {% endif %}
+  
+  </div>
+  
+
+    <video src="{% static 'img/video-1.mp4' %}" autoplay loop muted></video>
+
+    <div class="login-form">
+        <h1>Login Here !</h1>
+        <form action="{% url 'login' %}" method="POST" name="login">
+            {% csrf_token %}
+             {% comment %} <!-- Cross-Site Request Forgery (CSRF) is an attack that forces authenticated users to submit a request to a Web application against which they are currently authenticated. {% endcomment %}
+            <div class="email">
+                <label for="email">Email</label>
+                <br>
+                <input type="text" placeholder="Enter email">
+            </div>
+
+            <div class="password">
+                <label for="password">Password</label>
+                <br>
+                <input type="text" placeholder="Enter Password">
+            </div>
+
+            <div class="btn">
+                <button>Login</button>
+            </div>
+           <div class="forget">
+            <a href="">Forget Password</a>
+           </div>
+            
+
+        </form>
+    </div>
+</body>
+</html>
+{% endblock %}

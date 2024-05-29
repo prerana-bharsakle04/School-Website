@@ -1,0 +1,106 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vande Mataram Education Campus</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="left">Vande Mataram</div>
+            <div class="middle">
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="#abt">About</a></li>
+                    <li><a href="#Sclass">Class</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#cont">Contact</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+<div class="contact" id="cont">
+
+  
+
+  <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232.3480223125893!2d74.13700674731083!3d21.393123229016158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdfa1d13b9e307d%3A0x19a763af48ec684e!2sMadhyamik%20Vidyalaya%2C%20Umarde%20Bk.!5e0!3m2!1sen!2sin!4v1709635346943!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="contact-info">
+
+      <div class="contact-1">
+          <div class="info">
+              <div class="location">
+                  
+                  <h4><i class="fa-solid fa-location-dot"></i>   Location</h4>
+                  <p>At Umarde Bk. Post-Sundarde, Taluka-Nandurbar, District-Nandurbar</p>
+              </div>
+              
+              <div class="email">
+                  <h4><i class="fa-solid fa-paper-plane"></i> Email</h4>
+                  <p>vandemataram@gmail.com</p>
+              </div>
+
+              <div class="call">
+                  <h4> <i class="fa-solid fa-phone-volume"></i> Call</h4>
+                  <p>+91 9423083383</p>
+              </div>
+          </div>
+      </div>
+      <div class="contact-2">
+        <div class="row mt-5 justify-content-center" data-aos="fade-up">
+          <div class="col-lg-10">
+            
+            <center>
+
+                  {% for x in messages %}
+
+                  <h5> 
+                  
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                     <strong style="color:green;">{{x}}</strong>
+                     <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                     </button>
+                    </div>
+                                      
+                  </h5>
+
+                  {% endfor %}
+
+            </center>
+            
+          <form action="{% url 'contact' %}", method="POST", name="contact">
+            {% csrf_token %}
+              <div class="row1">
+                  <div class="name">
+                      <input type="text" placeholder="Your Name">
+                  </div>
+                  <div class="email-1">
+                      <input type="text" placeholder="Your Email">
+                  </div>
+              </div>
+
+              <div class="subject">
+                  <input type="text" placeholder="Subject">
+              </div>
+
+              <div class="msg">
+                  <textarea name="text" id="" cols="30" rows="10" placeholder="Message"></textarea>
+              </div>
+
+              <div class="submit">
+                  <button>Send Message    <i class="fa-solid fa-angle-right"></i></button>
+              </div>
+          </form>
+      </div>
+      
+    
+  </div>
+</div>
